@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "pdfBot-p1"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [
+    { include = "app" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+uvicorn = "^0.23.2"
+langserve = ">=0.0.30"
+pydantic = ">=2.5.2"
+tqdm = "^4.67.1"
+unstructured = {extras = ["all-docs"], version = "^0.16.11"}
+langchain-experimental = "^0.3.4"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.2.14"
+langchain-community = "^0.3.13"
+tiktoken = "^0.8.0"
+psycopg = "^3.2.3"
+pgvector = "^0.3.6"
+pinecone-client = "^5.0.1"
+langchain = "^0.3.13"
+langchain-pinecone = "^0.2.0"
+httpx = ">=0.24.0,<0.25.0"
+
+
+[tool.poetry.group.dev.dependencies]
+langchain-cli = ">=0.0.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
